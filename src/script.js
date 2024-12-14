@@ -125,7 +125,7 @@ async function displayPage(pageNumber, searchTerm, webps) {
     // Determine image source
     let imgSrc = "https://cdn.jsdelivr.net/gh/jinix6/ff-resources@refs/heads/main/pngs/300x300/UI_EPFP_unknown.png"
     if (pngs_json_list?.includes(item.icon + ".png")) {
-      imgSrc = `https://cdn.jsdelivr.net/gh/jinix6/ff-resources@refs/heads/main/pngs/300x300/${item.icon}.png`;
+      imgSrc = `/jinix6/ff-resources@refs/heads/main/pngs/300x300/${item.icon}.png`;
     } else {
       const keyToFind = item.itemID.toString();
       const value = cdn_img_json[item.itemID.toString()] ?? null;
@@ -310,10 +310,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // Define an object containing key-value pairs for link identifiers and their corresponding URLs
 const links = {
-  clgroup: "https://t.me/freefirecraftlandgroup", // Telegram group for Craftland
-  clprogroup: "https://t.me/ffcsharezone", // Telegram group for sharing zone
-  tg: "https://t.me/Crystal_Person", // Telegram link for a person
-  gt: "https://github.com/jinix6" // GitHub profile link
+  clgroup: "https://chat.whatsapp.com/Gxi4enKclUi7bOEyIdRJJc", // Telegram group for Craftland
+  clprogroup: "https://chat.whatsapp.com/Gxi4enKclUi7bOEyIdRJJc", // Telegram group for sharing zone
+  tg: "https://t.me/mechatv", // Telegram link for a person
+  gt: "https://github.com/xlanz" // GitHub profile link
 };
 // Iterate over the entries of the 'links' object
 Object.entries(links).forEach(([t, e]) => {
